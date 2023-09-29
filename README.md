@@ -6,12 +6,12 @@ an implementation of leader election using Redis as the coordination mechanism:
 
 # example
 setup redis servers
-``bash 
+```bash 
 git clone github.com/dtest11/redleader
 cd redleader
 make setup
 go run example/main.go
-``
+```
 you can check example/main.go
 
 ![alt text](example/img.png "Title")
