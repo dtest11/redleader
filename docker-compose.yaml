@@ -1,0 +1,42 @@
+version: '3'
+services:
+  r1:
+    image: redis
+    container_name: r11
+    ports:
+      - 6379:6379
+    networks:
+      - mynetwork
+
+  r2:
+    image: redis
+    container_name: r22
+    ports:
+      - 6380:6379
+    networks:
+      - mynetwork
+  r3:
+    image: redis
+    container_name: r33
+    ports:
+      - 6381:6379
+    networks:
+      - mynetwork
+#  server:
+#    image: hello/demo/v0-20210819:e0ab79bf
+#    container_name: s11
+#    networks:
+#      - mynetwork
+#  server2:
+#    image: hello/demo/v0-20210819:e0ab79bf
+#    container_name: s22
+#    networks:
+#      - mynetwork
+#  server3:
+#    image: hello/demo/v0-20210819:e0ab79bf
+#    container_name: s33
+#    networks:
+#      - mynetwork
+    
+networks:
+  mynetwork:
